@@ -3,11 +3,14 @@
  * Digital Globallo Theme Functions
  *
  * @package DigitalGloballo
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 if (!defined('ABSPATH'))
     exit;
+
+// Theme version constant — bump on every release
+define('DG_THEME_VERSION', '1.1.0');
 
 /* ============================================
    THEME SETUP
@@ -55,6 +58,10 @@ add_action('after_setup_theme', 'digitalgloballo_setup');
    ============================================ */
 function digitalgloballo_scripts()
 {
+    // Use file modification time as version for automatic cache busting
+    $css_version = filemtime(get_stylesheet_directory() . '/style.css');
+    $js_version = filemtime(get_stylesheet_directory() . '/js/main.js');
+
     // Google Fonts
     wp_enqueue_style(
         'google-fonts',
@@ -68,7 +75,7 @@ function digitalgloballo_scripts()
         'digitalgloballo-style',
         get_stylesheet_uri(),
         array('google-fonts'),
-        wp_get_theme()->get('Version')
+        $css_version
     );
 
     // Main JS
@@ -76,7 +83,7 @@ function digitalgloballo_scripts()
         'digitalgloballo-main',
         get_template_directory_uri() . '/js/main.js',
         array(),
-        wp_get_theme()->get('Version'),
+        $js_version,
         true
     );
 }
