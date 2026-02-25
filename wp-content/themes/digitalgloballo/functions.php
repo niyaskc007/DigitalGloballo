@@ -3,14 +3,14 @@
  * Digital Globallo Theme Functions
  *
  * @package DigitalGloballo
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 if (!defined('ABSPATH'))
     exit;
 
 // Theme version constant — bump on every release
-define('DG_THEME_VERSION', '1.1.0');
+define('DG_THEME_VERSION', '1.2.0');
 
 /* ============================================
    THEME SETUP
