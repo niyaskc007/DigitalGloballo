@@ -326,7 +326,7 @@ get_header();
                     </div>
                 </div>
 
-                <a href="<?php echo home_url('/about/'); ?>" class="btn btn--primary">
+                <a href="<?php echo home_url('/about-us/'); ?>" class="btn btn--primary">
                     Our Full Story <?php echo digitalgloballo_icon('arrow-right'); ?>
                 </a>
             </div>
@@ -632,7 +632,7 @@ get_header();
                 <?php endforeach; ?>
             </div>
             <div style="text-align:center;margin-top:48px;">
-                <a href="<?php echo home_url('/blog/'); ?>" class="btn btn--outline">View All Posts</a>
+                <a href="<?php echo home_url('/our-blog/'); ?>" class="btn btn--outline">View All Posts</a>
             </div>
         <?php else: ?>
             <div class="blog-empty">

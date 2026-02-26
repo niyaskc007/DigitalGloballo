@@ -14,7 +14,7 @@ get_header();
         <div class="breadcrumb" style="margin-bottom: 16px;">
             <a href="<?php echo home_url('/'); ?>">Home</a>
             <span class="separator">/</span>
-            <a href="<?php echo home_url('/blog/'); ?>">Blog</a>
+            <a href="<?php echo home_url('/our-blog/'); ?>">Blog</a>
             <span class="separator">/</span>
             <span class="current">
                 <?php the_title(); ?>

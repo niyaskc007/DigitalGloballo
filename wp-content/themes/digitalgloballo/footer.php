@@ -57,9 +57,9 @@
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="<?php echo home_url('/'); ?>">Home</a></li>
-                    <li><a href="<?php echo home_url('/about/'); ?>">About Us</a></li>
+                    <li><a href="<?php echo home_url('/about-us/'); ?>">About Us</a></li>
                     <li><a href="<?php echo home_url('/services/'); ?>">Services</a></li>
-                    <li><a href="<?php echo home_url('/blog/'); ?>">Blog</a></li>
+                    <li><a href="<?php echo home_url('/our-blog/'); ?>">Blog</a></li>
                     <li><a href="<?php echo home_url('/contact/'); ?>">Contact</a></li>
                 </ul>
             </div>

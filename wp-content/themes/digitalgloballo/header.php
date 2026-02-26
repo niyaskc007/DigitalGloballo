@@ -15,9 +15,9 @@
     <!-- Mobile Navigation Overlay -->
     <div class="mobile-nav" id="mobileNav">
         <a href="<?php echo home_url('/'); ?>">Home</a>
-        <a href="<?php echo home_url('/about/'); ?>">About Us</a>
+        <a href="<?php echo home_url('/about-us/'); ?>">About Us</a>
         <a href="<?php echo home_url('/services/'); ?>">Services</a>
-        <a href="<?php echo home_url('/blog/'); ?>">Blog</a>
+        <a href="<?php echo home_url('/our-blog/'); ?>">Blog</a>
         <a href="<?php echo home_url('/contact/'); ?>">Contact</a>
     </div>
 
@@ -38,11 +38,11 @@
                 <nav class="main-nav" id="mainNav">
                     <a href="<?php echo home_url('/'); ?>" <?php if (is_front_page())
                            echo 'class="active"'; ?>>Home</a>
-                    <a href="<?php echo home_url('/about/'); ?>" <?php if (is_page('about'))
+                    <a href="<?php echo home_url('/about-us/'); ?>" <?php if (is_page('about-us'))
                            echo 'class="active"'; ?>>About Us</a>
                     <a href="<?php echo home_url('/services/'); ?>" <?php if (is_page('services'))
                            echo 'class="active"'; ?>>Services</a>
-                    <a href="<?php echo home_url('/blog/'); ?>" <?php if (is_home() || is_single())
+                    <a href="<?php echo home_url('/our-blog/'); ?>" <?php if (is_home() || is_single())
                            echo 'class="active"'; ?>>Blog</a>
                     <a href="<?php echo home_url('/contact/'); ?>" <?php if (is_page('contact'))
                            echo 'class="active"'; ?>>Contact</a>
